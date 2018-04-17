@@ -1,0 +1,28 @@
+.texto{
+    width: 300px;
+    height: 1000px;
+    background-color: greenyellow;
+    color: red;
+    font-size: 20px;
+    font-family: Helvetica, Verdana, Arial, Times New Roma;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    
+    margin: auto;
+    margin-top: 0px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.flutuante{
+    height: 100px;
+    background-color: red;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*right: 0px;*/
+    /*bottom: 0px;*/
+}
