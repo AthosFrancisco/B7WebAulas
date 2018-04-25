@@ -1,0 +1,16 @@
+body{
+	margin:0;
+}
+
+
+form{
+	background-color: #CCC;
+	margin: auto;
+	margin-top: 20px;
+	padding: 30px;
+	width: 200px;
+}
+
+.conteudo{
+	margin:auto;
+}
