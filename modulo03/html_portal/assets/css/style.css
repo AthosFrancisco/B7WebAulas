@@ -80,7 +80,6 @@ body{
 .topo2{
 	color: #000;
 	height: 95px;
-	background-color: #999;
 }
 
 .topo2int{
@@ -102,6 +101,10 @@ body{
 	width: 650px;
 	height: 80px;
 	float: right;
-	margin-top: 7px;
 	background-color: red;
+}
+
+.topo2int .logo img{
+	width: 100%;
+	height: 100%;
 }
