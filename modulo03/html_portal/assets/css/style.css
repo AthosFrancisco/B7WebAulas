@@ -381,12 +381,14 @@ body{
 	font-size: 35px;
 }
 
-#menu{
-	display: block;
-}
-
 .menumobile{
 	display: none;
+}
+
+@media only screen and (min-width: 1057px){
+	#menu{
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 909px) and (max-width: 1057px) {
