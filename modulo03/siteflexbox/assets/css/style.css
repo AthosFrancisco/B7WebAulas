@@ -1,6 +1,8 @@
 body{
 	margin:0;
 	padding:0;
+	font-family: Arial;
+	margin-bottom: 500px;
 }
 
 header{
@@ -44,7 +46,6 @@ nav a{
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #727272;
-	font-family: Arial;
 }
 
 nav .active,
@@ -77,10 +78,107 @@ nav a:hover{
 
 .banner_headline h1{
 	color: #FFFFFF;
-	font-size: 50px;
+	font-size: 70px;
 	text-shadow: 1px 1px 0px #000000;
+	margin: 0;
+	padding: 0;
+	max-width: 350px;
+}
+
+.banner_headline h2{
+	color: #FFFFFF;
+	font-size: 21px;
+	text-shadow: 1px 1px 0px #000000;
+	margin: 0;
+	padding: 0;
+	max-width: 350px;
+	margin-top: 30px;
 }
 
 .banner_options{
 	height: 210px;
+	display: flex;
+}
+
+.banner1,
+.banner2,
+.banner3{
+	flex: 1;
+	color: #FFFFFF;
+	padding: 20px;
+}
+
+.banner1{
+	background-color: #39aae1;
+}
+
+.banner2{
+	background-color: #0079c7;
+}
+
+.banner3{
+	background-color: #2b4c99;
+}
+
+.bannertitle{
+	font-size: 21px;
+}
+
+.banner_desc{
+	font-size: 12px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.banner_options a{
+	display: inline-block;
+	border: 1px solid #FFFFFF;
+	padding: 5px;
+	color: #FFF;
+	font-size: 13px;
+	text-decoration: none;
+}
+
+.banner3 .banner_hours{
+	font-size: 12px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	border-bottom: 1px solid #65edef;
+	display: flex;
+	justify-content: space-between;
+}
+
+.banner3 .banner_title{
+	margin-bottom: 5px;
+}
+
+#geral{
+	display: flex;
+	justify-content: center;
+}
+
+#geral section{
+	flex: 2;
+}
+
+#geral aside{
+	flex: 1;
+}
+
+.widget_title{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+.widget_title_text{
+	color: #000;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+.widget_title_bar{
+	width: 50px;
+	height: 3px;
+	background-color: #36a9e1;
+	margin-top: 10px;
 }
