@@ -237,3 +237,47 @@ article .news_resume{
 	line-height: 20px;
 	margin-bottom: 30px;
 }
+
+.departaments_item{
+	flex: 1;
+	min-width: 120px;
+	min-height: 120px;
+	background-color: #000;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	justify-content: space-between;
+}
+
+.make_text,
+.make_contact{
+	font-size: 12px;
+}
+
+.make_text{
+	margin: 0;
+	padding: 0;
+}
+
+.make_contact{
+	padding:0;
+	margin: 0;
+	margin-top: 20px;
+	border-top: 1px solid #000;
+}
+
+.make_contact .contact{
+	border-bottom: 1px solid #000;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.contact img{
+	border: 1px solid #000;
+	margin-right: 10px;
+	width: 15px;
+	height: 15px;
+}
+
+footer{
+	background-color: #1e1e1e;
+}
