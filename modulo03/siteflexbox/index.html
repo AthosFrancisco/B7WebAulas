@@ -1,11 +1,24 @@
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<title>MediCenter</title>
 
 	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, user-scalable=0">
+	<meta name="viewport" content="width=device-width,user-scalable=0">
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			document.querySelector(".menuMobile").addEventListener("click", function(){
+					if(document.querySelector(".menu nav ul").style.display == 'flex'){
+						document.querySelector(".menu nav ul").style.display = 'none';
+					}else{
+						document.querySelector(".menu nav ul").style.display = 'flex';
+					}
+			});
+		};
+	</script>
 </head>
 <body>
 	
@@ -16,6 +29,11 @@
 		</div>
 		<div class="menu">
 			<nav>
+				<div class="menuMobile">
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+					<div class="mm_line"></div>
+				</div>
 				<ul>
 					<li><a href="./" class="active">HOME</a></li>
 					<li><a href="">HOME</a></li>
@@ -68,7 +86,7 @@
 <section id="geral">
 	<div class="container">
 		<section>
-			<div class="widget_title">
+				<div class="widget_title">
 					<div class="widget_title_text">Latest News</div>
 					<div class="widget_title_bar"></div>
 				</div>
@@ -190,7 +208,129 @@
 	</div>
 </section>
 <footer>
-	...
+	<div class="container flexColumn">
+		<div class="footer_menu">
+			<div class="fm_1">
+				<h1>Health Insurance</h1>
+				<h2>Here in medicenter we have individual &rarr;</h2>
+			</div>
+			<div class="fm_2">
+				<h1>Medical Records</h1>
+				<h2>Here in medicenter we have individual &rarr;</h2>
+			</div>
+			<div class="fm_3">
+				<h1>Online Bill</h1>
+				<h2>Here in medicenter we have individual &rarr;</h2>
+			</div>
+		</div>
+
+		<div class="footer_area">
+			<div class="footer_areaitem">
+				<div class="widget_title">
+					<div class="widget_title_text">Medicenter Clinic</div>
+					<div class="widget_title_bar"></div>
+				</div>
+				<div class="conteudo">
+					<div>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+					</div>
+					<div>
+						<table>
+							<tr>
+								<td>Medicenter</td>
+								<td></td>
+							</tr>
+							<tr>
+								<td>33 Farlane Street</td>
+								<td>+123 655 655</td>
+							</tr>
+							<tr>
+								<td>Keilor East</td>
+								<td>+123 755 755</td>
+							</tr>
+							<tr>
+								<td>VIC 3033, Australia</td>
+								<td>medicenter@mail.com</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="footer_areaitem">
+				<div class="widget_title">
+					<div class="widget_title_text">Latest Post</div>
+					<div class="widget_title_bar"></div>
+				</div>
+				<div class="conteudo">
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer_areaitem">
+				<div class="widget_title">
+					<div class="widget_title_text">Latest Tweets</div>
+					<div class="widget_title_bar"></div>
+				</div>
+				<div class="conteudo">
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+					<div class="flex">
+						<div class="left">
+							&rarr;
+						</div>
+						<div class="right">
+							Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.
+							<div class="day">6 years ago</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer_copy">
+			&copy; Copyright - Todos os direitos reservados
+		</div>
+	</div>
 </footer>
 </body>
 </html>
