@@ -1,0 +1,136 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+header{
+	background-color: #3949ab;
+	color: #FFF;
+	height: 50px;
+}
+
+header .container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 50px;
+}
+
+.container{
+	max-width: 1024px;
+	margin: auto;
+}
+
+header .right{
+	flex: 1;
+}
+
+header .left{
+	flex: 1;
+	padding-left: 10px;
+}
+
+header .center{
+	flex: 2;
+	text-align: center;
+}
+
+header .center input{
+	flex: 1;
+	width: 100%;
+}
+
+header ul{
+	list-style: none;
+	display: none;
+	position: absolute;
+}
+
+header nav{
+	display: flex;
+	justify-content: flex-end;
+}
+
+.hamburger{
+	width: 50px;
+}
+
+.hamburger .row{
+	border: 3px solid #FFF;
+	margin: 3px;
+	width: 20px;
+}
+
+#geral .container{
+	display: flex;
+	margin-top: 20px;
+
+}
+
+#geral .container section{
+	flex: 2;
+	margin-right: 10px;
+}
+
+#geral .container aside{
+	flex: 1
+}
+
+section h1{
+	font-size: 30px;
+}
+
+section .text_main{
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+}
+
+.text_main span{
+	font-size: 14px;
+}
+
+footer{
+	margin-bottom: 50px;
+}
+
+footer .title{
+	font-size: 20px;
+}
+
+footer .container{
+	display: flex;
+}
+
+footer .secao1{
+	flex: 1;
+}
+
+footer .secao2,
+footer .secao3{
+	flex: 2;
+}
+
+footer .secao2 .conteudo,
+footer .secao3 .conteudo{
+	column-count: 2;
+}
+
+footer .title{
+	margin-bottom: 20px;
+}
+
+footer ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer li{
+	margin-bottom: 15px;
+}
+
+footer a{
+	text-decoration: none;
+	color: #2969b0;
+}
