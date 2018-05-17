@@ -9,6 +9,21 @@ window.onload = function(){
 	//nome = prompt("Qual seu nome?");
 
 	//document.write(nome);
+
+	var lista = ["Arroz", "Feijão", "Macarrão", "Carne", 20];
+
+	var result;
+
+	result = lista.indexOf("Feijão");
+	result = lista.indexOf("oi");
+	result = lista.join(", ");
+
+	lista.pop();
+	lista.shift();
+	lista.push(50);
+
+	alert(result);
+	alert(lista);
 };
 
 //https://jsfiddle.net/
@@ -41,3 +56,4 @@ function somar(){
 
 	alert(soma);
 }
+
