@@ -28,11 +28,29 @@
 			font-size: 150px;
 			text-align: center;
 		}
+
+		.botao{
+			clear: left;
+		}
+
+		.botao input,
+		.botao button{
+			width: 423px;
+			height: 30px;
+			margin: 10px;
+			font-size: 20px
+		}
 	</style>
 </head>
 <body>
-	<div class="area1">0</div>
-	<div class="area2"><input type="text" name="numero"/></div>
-	<button>Verificar</button>
+	<h2>Escolha um número entre 0 e 9</h2>
+	<!--<form autocomplete="off"> onsubmit="comparar();"-->
+		<div class="area1"><span id="n1">0</span></div>
+		<div class="area2"><input id="n2" type="number" autofocus  min="0" max="9" /></div>
+		<div class="botao">
+			<!--<input onclick="comparar();" type="submit" value="Verificar">-->
+			<button onclick="comparar();">Verificar</button>
+		</div>
+	<!--</form>-->
 </body>
 </html>
