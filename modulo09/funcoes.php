@@ -38,4 +38,54 @@
 	$vencedor = array_rand($lista);
 
 	echo "O vencedor é: ".$lista[$vencedor];
+
+	//manipulação de texto
+
+	$nome = "Athos Francisco";
+	$lista = array("Athos", "Francisco");
+
+	$x = explode(" ", $nome);
+
+	echo "<br/><br/>";
+
+	print_r($x);
+
+	echo "<br/><br/>";
+
+	print_r(implode(" ", $lista));
+
+	$y = number_format(8256312.456, 2, ",", ".");
+
+	echo "<br/><br/>";
+
+	echo $y;
+
+	$texto = "O rato roeu a roupa!";
+	$string = str_replace("roeu", "comeu", $texto);
+
+	echo "<br/>".$texto." <br/>".$string;
+
+	echo "<br/><br/>";
+
+	echo strtolower("ATHOS FRANCISCO");
+
+	echo "<br/><br/>";
+
+	echo substr("ATHOS", 0, 3);
+
+	//manipulação de array
+
+	$array = array(
+		"nome" => "Athos",
+		"idade" => 54,
+		"cidade" => "Recife",
+		"pais" => "Brasil"
+	);
+
+	$array2 = array_keys($array);
+	$array2 = array_values($array);
+
+	echo "<br/><br/>";
+
+	print_r($array2);
 ?>
