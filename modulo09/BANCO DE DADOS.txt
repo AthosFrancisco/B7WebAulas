@@ -1,0 +1,16 @@
+BANCO DE DADOS
+-posts
+	-id
+	-titulo
+	-data que foi criada
+	-corpo da postagem
+	-autor
+
+
+insert into posts set titulo = "titulo de teste", data_criado = "2018-01-01 00:00:00", corpo = "Algum texto", autor = "Athos";
+
+select * from posts;
+
+update posts set titulo = "Titulo atualizado" where id = 2;
+
+delete from posts where id = 2;
