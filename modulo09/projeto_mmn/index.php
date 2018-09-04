@@ -24,3 +24,5 @@ if(empty($_SESSION['mmnlogin'])){
 ?>
 
 <h1>Bem vindo <?php echo $nome;?></h1>
+<button><a href="cadastro.php" style="text-decoration: none; color: #000">Cadastrar Novo Usuário</a></button>
+<button><a href="sair.php" style="text-decoration: none; color: #000">Sair</a></button>
