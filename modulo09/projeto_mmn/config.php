@@ -1,4 +1,5 @@
 <?php
+global $pdo;
 try{
 	$pdo = new PDO("mysql:dbname=projeto_mmn;host=localhost", "root", "");
 }catch(PDOException $e){
@@ -6,5 +7,11 @@ try{
 }
 
 session_start();
+
+$limite = 4;
+
+$patente = array(
+	
+);
 
 ?>
