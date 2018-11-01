@@ -8,7 +8,11 @@ if(empty($_SESSION['mmnlogin'])){
 }else{
 	$id = $_SESSION['mmnlogin'];
 
-	$sql = "SELECT nome FROM usuarios WHERE id = :id;";
+	$sql = "SELECT "
+                . "u.nome, p.nome as p_nome"
+                . " FROM usuarios as u "
+                . "LEFT JOIN patentes as p on p.id = u.patente"
+                . " WHERE u.id = :id";
 
 	$sql = $pdo->prepare($sql);
 	$sql->bindValue(":id", $id);
@@ -17,6 +21,7 @@ if(empty($_SESSION['mmnlogin'])){
 	if($sql->rowCount() > 0){
 		$sql = $sql->fetch();
 		$nome = $sql['nome'];
+                $patenteLocal = $sql['p_nome'];
 	}else{
 		header("location: login.php");
 		exit;
@@ -40,4 +45,3 @@ $list = listar($id, $limite);
 
 <?php
 exibir($list);
-?>

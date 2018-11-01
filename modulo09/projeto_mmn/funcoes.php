@@ -3,7 +3,11 @@ function listar($id, $limite){
 	$lista = array();
 	global $pdo;
 
-	$sql = $pdo->prepare("SELECT * FROM usuarios WHERE id_pai = :id");
+	$sql = $pdo->prepare("SELECT "
+                . "u.id, u.id_pai, u.patente, u.nome, p.nome as p_nome"
+                . " FROM usuarios as u "
+                . "LEFT JOIN patentes as p on p.id = u.patente"
+                . " WHERE id_pai = :id");
 	$sql->bindValue(":id", $id);
 	$sql->execute();
 
@@ -25,7 +29,7 @@ function exibir($array){
 	echo '<ul>';
 	foreach ($array as $usuario) {
 		echo "<li>";
-		echo $usuario['nome'];
+		echo $usuario['nome'].' ('.$usuario['p_nome'].')';
 
 		if(count($usuario['filhos']) > 0){
 			exibir($usuario['filhos']);

@@ -271,7 +271,7 @@ body{
 }
 
 .slideshowarea{
-	width: 100000px
+	width: 100000px;
 	height: 335px;
 	transition: all 1s;
 }

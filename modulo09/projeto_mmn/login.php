@@ -32,7 +32,7 @@ if(!empty($_POST['email'])){
 			<td><input type="email" id="email" name="email"></td>
 		</tr>
 		<tr>
-			<td><label for="senha">Email</label></td>
+			<td><label for="senha">Senha</label></td>
 			<td><input type="password" name="senha" id="senha"></td>
 		</tr>
 		<tr>
