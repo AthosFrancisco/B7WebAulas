@@ -1,4 +1,26 @@
 <?php
+function calcular_cadastros($id, $limite){
+	$lista = array();
+	global $pdo;
+
+	$sql = $pdo->prepare("SELECT * FROM usuarios WHERE id_pai = :id");
+	$sql->bindValue(":id", $id);
+	$sql->execute();
+
+	if($sql->rowCount() > 0){
+		$lista = $sql->fetchAll(PDO::FETCH_ASSOC);
+                
+                $filhos = $sql->rowCount();
+                
+		foreach ($lista as $usuario) {
+			if($limite > 0){
+				$filhos += calcular_cadastros($usuario['id'], $limite-1);
+			}
+		}
+	}
+	return $filhos;
+}
+
 function listar($id, $limite){
 	$lista = array();
 	global $pdo;
@@ -13,7 +35,7 @@ function listar($id, $limite){
 
 	if($sql->rowCount() > 0){
 		$lista = $sql->fetchAll(PDO::FETCH_ASSOC);
-
+                
 		foreach ($lista as $chave => $usuario) {
 			$lista[$chave]['filhos'] = array();
 			if($limite > 0){

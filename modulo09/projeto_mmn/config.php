@@ -14,5 +14,3 @@ $limite = 4;
 $patente = array(
 	
 );
-
-?>
