@@ -2,7 +2,7 @@
 	
 	$dsn = "mysql:dbname=blog;host=localhost:3306";
 	$dbuser = "root";
-	$dbpass = "";
+	$dbpass = "vagrant";
 
 	//consulta
 

@@ -14,16 +14,19 @@ if($sql->rowCount() > 0){
     }
 }
 
-$sql = "SELECT * FROM patentes ORDER BY min DESC";
+$sql = "SELECT * FROM patentes ORDER BY minimo DESC";
 $sql = $pdo->query($sql);
 $patentes = array();
 if($sql->rowCount() > 0){
     $patentes = $sql->fetchAll();
 }
 
+echo '<pre>';
+print_r($patentes);
+
 foreach ($usuarios as $usuario){
     foreach ($patentes as $patente){
-        if(intval($usuario['filhos']) >= intval($patente['min'])){
+        if($usuario['filhos'] >= $patente['minimo']){
             
             $sql = "UPDATE usuarios SET patente = :patente WHERE id = :id";
             $sql = $pdo->prepare($sql);
